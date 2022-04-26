@@ -7,7 +7,7 @@
 -->
 <html>
 	<head>
-		<title>ReadySet Go</title>
+		<title>Code Karin</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
@@ -21,7 +21,7 @@
 					<nav id="nav">
 						<a href="index.html">Home</a>
 						<a href="deliverables.html">Deliverables</a>
-						<a href="./assets/pdf/WAR/WAR .pdf">WAR</a>
+						<a href="https://docs.google.com/spreadsheets/d/1sDnQgDzSKvGgReEnWzGs8_d_yDOAcuf3Jx8aVehYLw4/edit#gid=0">WAR</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
@@ -29,11 +29,19 @@
 
 		<!-- Banner -->
 			<section id="banner-main">
-				<h1>ReadySet Go</h1>
-				<p>Welcome to the project site for the AlphaGo Web application!</p>
+				<h1>Code Karin</h1>
+				<p>Virtual Classroom</p>
+				<a class="hero__action-btn" href="#ourStory">Our Story</a>
 			</section>
 
-		
+		<!-- OUR STORY -->
+		<section id="ourStory" class="wrapper style1 special">
+			<header>
+				<h2>Our Story</h2>
+			</header>
+			
+			<p>Lorem ipsum</p>
+		</section>
 		<!-- Meet the team -->
 			<section id="second" class="wrapper style1 special">
 				<div class="item-wrap">
@@ -45,43 +53,43 @@
 							<div class="image circle">
 								<img src="./assets/images/team lead_Backend Developer.png" alt="Person 1" />
 							</div>
-							<h3>Kien Nguyen</h3>
+							<h3>Jacob Hollis</h3>
 							<p>Team Leader</p>
 						</div>
 						<div class="box-item person">
 							<div class="image circle">
 								<img src="./assets/images/API Gateway.png" alt="Person 2" />
 							</div>
-							<h3>Ryan Moncrief</h3>
+							<h3>Dylan Wulfson</h3>
 							<p>API Gateway</p>
 						</div>
 						<div class="box-item person">
 							<div class="image circle">
 								<img src="./assets/images/Frontend Developer.png" alt="Person 3" />
 							</div>
-							<h3>Derek Isensee</h3>
+							<h3>Ngan Hanh Tran</h3>
 							<p>Frontend Developer</p>
 						</div>
 						<div class="box-item person">
 							<div class="image circle">
 								<img src="./assets/images/Database.png" alt="Person 4" />
 							</div>
-							<h3>Christian Arciniega</h3>
+							<h3>Kate Brayshaw</h3>
 							<p>Database</p>
 						</div>
 						<div class="box-item person">
 							<div class="image circle">
 								<img src="./assets/images/JUnit Testing.png" alt="Person 1" />
 							</div>
-							<h3>Ryan Clements</h3>
-							<p>JUnit Tester</p>
+							<h3>Nithesh Bonugu</h3>
+							<p>Frontend Developer</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
 		<!-- Three -->
-			<section id="three" class="wrapper special">
+			<section id="three" class="wrapper special" style="display: none;">
 				<div class="item-wrap">
 					<header class="align-center">
 						<h2>Who We Are</h2>
@@ -92,25 +100,25 @@
 								<img src="./assets/images/BottomHomepagePic.jpg" alt="Pic 01" />
 							</div>
 							<header>
-								<h3>The AlphaGo Project</h3>
+								<h3>Code Karin</h3>
 							</header>
-							<p>AlphaGo is an AI project run by Google, and is designed to use deep learning to play the classic board game, Go. In 2015, AlphaGo became the first computer program to beat a professional Go player. This has sparked many research projects on the ALphaGo AI. <br>
+							<p>Karin seeks to provide a teacher-driven computer programming education platform that allows users total anonymity in communication and grading. The purpose of this software is to provide educators the ability to assign students both in class programming contests that are graded on a time-to-completion basis and to facilitate both guided and collaborative communication about programming and computer software. <br>
 								<br>
 							<header>
-								<h3>Where Do We Come in?</h3>	
+								<h3>Our Solution?</h3>	
 							</header>
-							The TCU Computer Science Department has launched an AlphaGo research project. Currently, it can only be used by those directly involved with the project, and only at certain computers on campus. In addition, the interface for conducting research is difficult to use. Our goal is to make this project more widely accessible to students and faculty alike, whether they wish to help in research, or simply want to learn to play Go. We will achieve this by developing a web application for the project that allows users to play against various Go AI agents, as well as allowing researchers to train new AI. </p>
+							This product was initially designed to be used in university Intro to Programming classes where the professor recognized students were hesitant to participate due to a perceived lack of knowledge of the topic. In any situation, asking questions can be beneficial, and this platform will provide students the ability to ask their peers and professors questions without the fear of negative reflection on their knowledge or understanding.  </p>
 						</article>
 					</div>
 				</div>
 			</section>
 
 		<!-- Footer -->
-			<footer id="footer">
+			<footer id="footer" style="display: none;">
 				<div class="item-wrap">
 					<div class="flex">
 						<div class="copyright">
-							 ReadySet Go 2020-2021. Texas Christian University.
+							 Code Karin 2021-2022. Texas Christian University.
 						</div>
 					</div>
 				</div>
@@ -121,6 +129,18 @@
 			<script src="./assets/js/skel.min.js"></script>
 			<script src="./assets/js/util.js"></script>
 			<script src="./assets/js/main.js"></script>
-
+			<script>
+				$(".hero__action-btn").on("click", function (e) {
+					var i = $(this.getAttribute("href"));
+					i.length &&
+						(e.preventDefault(),
+							$("html, body").animate(
+								{
+									scrollTop: i.offset().top,
+								},
+								600
+							));
+				});
+			</script>
 	</body>
 </html>

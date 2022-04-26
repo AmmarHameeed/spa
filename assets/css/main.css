@@ -3272,6 +3272,14 @@ button:disabled,
 .deliverable__section article hr{
     display: none;
 }
+#ourStory p {
+  width: 75%;
+  line-height: 32px;
+  margin: auto;
+}
+#second .box-item.person p{
+  max-width: 150px;
+}
 @media screen and (max-width: 484px) {
   #second .item-wrap .flex {
     justify-content: center;

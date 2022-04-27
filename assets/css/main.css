@@ -3241,9 +3241,13 @@ button:disabled,
 .button.special {
   margin-bottom: 5px;
 }
+.deliverable-page{
+  height: 100vh;
+    background: #000;
+}
 .wrapper.deliverable__section{
   padding: 10em 0;
-	background: #000000;
+	/* background: #000000; */
 	color: #ffffff;
 }
 .deliverable__section h2{
@@ -3272,8 +3276,12 @@ button:disabled,
 .deliverable__section article hr{
     display: none;
 }
+#ourStory {
+  padding-bottom: 0;
+}
 #ourStory p {
   width: 75%;
+  font-size: 1.35em;
   line-height: 32px;
   margin: auto;
 }

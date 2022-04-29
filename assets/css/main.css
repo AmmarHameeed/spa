@@ -3250,12 +3250,16 @@ button:disabled,
 	/* background: #000000; */
 	color: #ffffff;
 }
+.wrapper.deliverable__section .flex{
+  justify-content: flex-start;
+}
 .deliverable__section h2{
 	color: white;
 	font-weight: 600;
 }
 .deliverable__section article {
     width: 24%;
+    margin-right: 1%;
 	margin-bottom: 20px;
 }
 .deliverable__section article a{
